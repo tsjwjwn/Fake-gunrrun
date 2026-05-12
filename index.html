@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake-gunrrun</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="theme-color" content="#111">
+</head>
+<body>
+
+<div id="ui">
+  <h2>Fake-gunrrun</h2>
+  <p>Máu: <span id="hp">100</span></p>
+  <p>Xu: <span id="coin">0</span></p>
+  <button onclick="buyGun()">Mua nâng cấp súng</button>
+</div>
+
+<canvas id="game"></canvas>
+
+<script src="game.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+
+</body>
+</html>
