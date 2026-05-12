@@ -1,0 +1,8 @@
+Fake-gunrrun/
+│
+├── index.html
+├── style.css
+├── game.js
+├── manifest.json
+├── sw.js
+└── icon.png
